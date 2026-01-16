@@ -52,7 +52,7 @@ The plugin automatically generates a `settings.json` file in your server's root 
 
 ## 👨‍💻 Developer
 
-**Nyxis Studio**
+**Nyxis**
 
 ---
 
