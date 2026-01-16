@@ -38,3 +38,8 @@ build/
 .DS_Store
 
 /.idea/
+*.log
+*_dump.txt
+HytaleServer.jar
+HytaleServer.aot
+settings.json
