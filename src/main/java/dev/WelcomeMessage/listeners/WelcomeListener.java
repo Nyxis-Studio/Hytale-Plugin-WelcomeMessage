@@ -12,8 +12,6 @@ public class WelcomeListener {
             String messageText = SettingsManager.getInstance().getWelcomeMessage();
             String messageSubtitle = SettingsManager.getInstance().getWelcomeSubtitle();
 
-            // Using EventTitleUtil for big on-screen message
-            // Delay the message to ensure player is fully ready
             new java.util.Timer().schedule(new java.util.TimerTask() {
                 @Override
                 public void run() {
@@ -22,7 +20,7 @@ public class WelcomeListener {
                             Message.raw(messageSubtitle).color("#AAAAAA"),
                             true, null, 5, 2, 1);
                 }
-            }, 2000L); // 2 seconds delay
+            }, 2000L);
         }
     }
 }

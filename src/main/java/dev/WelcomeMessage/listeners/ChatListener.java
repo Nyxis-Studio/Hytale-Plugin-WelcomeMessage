@@ -15,7 +15,6 @@ public class ChatListener {
             String stage = SettingsManager.getInstance().getInputStage(playerKey);
 
             if ("MESSAGE_UP".equals(stage)) {
-                // Handle Message Up (Subtitle)
                 if (!input.equalsIgnoreCase("skip")) {
                     SettingsManager.getInstance().setWelcomeSubtitle(input);
                 } else {
@@ -27,10 +26,9 @@ public class ChatListener {
                         .color("#FFFF00"));
 
             } else if ("MESSAGE_CENTER".equals(stage)) {
-                // Handle Message Center (Title)
                 if (!input.equalsIgnoreCase("skip")) {
                     SettingsManager.getInstance().setWelcomeMessage(input);
-                } else { // Allow skipping main title too? User said "option to skip" for center too.
+                } else {
                     SettingsManager.getInstance().setWelcomeMessage("");
                 }
                 SettingsManager.getInstance().removeAwaitingInput(playerKey);
@@ -42,7 +40,6 @@ public class ChatListener {
                         .raw("Message Center: " + SettingsManager.getInstance().getWelcomeMessage()).color("#AAAAAA"));
             }
 
-            // Cancel the message so it doesn't appear in chat
             event.setCancelled(true);
         }
     }

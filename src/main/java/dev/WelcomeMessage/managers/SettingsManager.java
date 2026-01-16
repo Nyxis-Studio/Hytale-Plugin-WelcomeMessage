@@ -60,7 +60,7 @@ public class SettingsManager {
 
     public void addAwaitingInput(String playerRef) {
         awaitingInput.add(playerRef);
-        inputStage.put(playerRef, "MESSAGE_UP"); // Start with Message Up
+        inputStage.put(playerRef, "MESSAGE_UP");
     }
 
     public void removeAwaitingInput(String playerRef) {
