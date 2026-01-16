@@ -1,9 +1,9 @@
-package dev.hytalemodding.listeners;
+package dev.WelcomeMessage.listeners;
 
 import com.hypixel.hytale.server.core.Message;
 import com.hypixel.hytale.server.core.event.events.player.PlayerReadyEvent;
 import com.hypixel.hytale.server.core.util.EventTitleUtil;
-import dev.hytalemodding.managers.SettingsManager;
+import dev.WelcomeMessage.managers.SettingsManager;
 
 public class WelcomeListener {
 

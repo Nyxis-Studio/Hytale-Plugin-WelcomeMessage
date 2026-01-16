@@ -1,4 +1,4 @@
-package dev.hytalemodding.managers;
+package dev.WelcomeMessage.managers;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;

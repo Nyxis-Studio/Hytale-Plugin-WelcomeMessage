@@ -1,13 +1,13 @@
-package dev.hytalemodding;
+package dev.WelcomeMessage;
 
 import com.hypixel.hytale.server.core.event.events.player.PlayerReadyEvent;
 import com.hypixel.hytale.server.core.plugin.JavaPlugin;
 import com.hypixel.hytale.server.core.plugin.JavaPluginInit;
-import dev.hytalemodding.commands.SetMessageCommand;
-import dev.hytalemodding.commands.ToggleWelcomeCommand;
-import dev.hytalemodding.commands.MessageCommand;
-import dev.hytalemodding.listeners.WelcomeListener;
-import dev.hytalemodding.listeners.ChatListener;
+import dev.WelcomeMessage.commands.SetMessageCommand;
+import dev.WelcomeMessage.commands.ToggleWelcomeCommand;
+import dev.WelcomeMessage.commands.MessageCommand;
+import dev.WelcomeMessage.listeners.WelcomeListener;
+import dev.WelcomeMessage.listeners.ChatListener;
 import com.hypixel.hytale.server.core.event.events.player.PlayerChatEvent;
 
 import javax.annotation.Nonnull;

@@ -1,4 +1,4 @@
-package dev.hytalemodding.commands;
+package dev.WelcomeMessage.commands;
 
 import com.hypixel.hytale.component.Ref;
 import com.hypixel.hytale.component.Store;
@@ -10,7 +10,7 @@ import com.hypixel.hytale.server.core.universe.PlayerRef;
 import com.hypixel.hytale.server.core.universe.world.World;
 import com.hypixel.hytale.server.core.universe.world.storage.EntityStore;
 import com.hypixel.hytale.server.core.util.EventTitleUtil;
-import dev.hytalemodding.managers.SettingsManager;
+import dev.WelcomeMessage.managers.SettingsManager;
 
 import javax.annotation.Nonnull;
 

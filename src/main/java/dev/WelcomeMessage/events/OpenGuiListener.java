@@ -1,4 +1,4 @@
-package dev.hytalemodding.events;
+package dev.WelcomeMessage.events;
 
 import com.hypixel.hytale.component.Ref;
 import com.hypixel.hytale.component.Store;
@@ -11,7 +11,7 @@ import com.hypixel.hytale.server.core.event.events.player.PlayerReadyEvent;
 import com.hypixel.hytale.server.core.universe.PlayerRef;
 import com.hypixel.hytale.server.core.universe.world.World;
 import com.hypixel.hytale.server.core.universe.world.storage.EntityStore;
-import dev.hytalemodding.ui.MyUI;
+import dev.WelcomeMessage.ui.MyUI;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -26,15 +26,15 @@ public class OpenGuiListener {
 
         assert world != null;
         assert playerRef != null;
-//
-//        CompletableFuture.runAsync(() -> {
-//            CustomUIPage page = player.getPageManager().getCustomPage();
-//            if (page == null) {
-//                page = new MyUI(playerRef, CustomPageLifetime.CanDismiss);
-//                player.getPageManager().openCustomPage(ref, store, page);
-//            }
-//
-//            playerRef.sendMessage(Message.raw("UI Page Shown"));
-//        }, world);
+        //
+        // CompletableFuture.runAsync(() -> {
+        // CustomUIPage page = player.getPageManager().getCustomPage();
+        // if (page == null) {
+        // page = new MyUI(playerRef, CustomPageLifetime.CanDismiss);
+        // player.getPageManager().openCustomPage(ref, store, page);
+        // }
+        //
+        // playerRef.sendMessage(Message.raw("UI Page Shown"));
+        // }, world);
     }
 }

@@ -1,4 +1,4 @@
-package dev.hytalemodding.commands;
+package dev.WelcomeMessage.commands;
 
 import com.hypixel.hytale.component.Ref;
 import com.hypixel.hytale.component.Store;
@@ -25,15 +25,18 @@ public class ExampleCommand extends AbstractPlayerCommand {
     }
 
     @Override
-    protected void execute(@Nonnull CommandContext commandContext, @Nonnull Store<EntityStore> store, @Nonnull Ref<EntityStore> ref, @Nonnull PlayerRef playerRef, @Nonnull World world) {
+    protected void execute(@Nonnull CommandContext commandContext, @Nonnull Store<EntityStore> store,
+            @Nonnull Ref<EntityStore> ref, @Nonnull PlayerRef playerRef, @Nonnull World world) {
         Player player = commandContext.senderAs(Player.class);
 
         PacketHandler packetHandler = playerRef.getPacketHandler();
         Message primaryMessage = Message.raw("This is the primary message").color("#00FF00");
         Message secondaryMessage = Message.raw("This is the secondary message").color("#228B22");
 
-//        ItemWithAllMetadata iconItem = new ItemStack("Weapon_Sword_Mithril", 1).toPacket();
-//        NotificationUtil.sendNotification(packetHandler, primaryMessage, secondaryMessage, iconItem);
+        // ItemWithAllMetadata iconItem = new ItemStack("Weapon_Sword_Mithril",
+        // 1).toPacket();
+        // NotificationUtil.sendNotification(packetHandler, primaryMessage,
+        // secondaryMessage, iconItem);
 
         EventTitleUtil.showEventTitleToPlayer(playerRef, primaryMessage, secondaryMessage, true, null, 5, 1, 1);
     }

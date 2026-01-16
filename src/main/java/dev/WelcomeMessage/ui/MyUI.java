@@ -1,4 +1,4 @@
-package dev.hytalemodding.ui;
+package dev.WelcomeMessage.ui;
 
 import com.hypixel.hytale.codec.Codec;
 import com.hypixel.hytale.codec.KeyedCodec;
@@ -24,11 +24,13 @@ public class MyUI extends InteractiveCustomUIPage<MyUI.Data> {
     }
 
     @Override
-    public void build(@Nonnull Ref<EntityStore> ref, @Nonnull UICommandBuilder uiCommandBuilder, @Nonnull UIEventBuilder uiEventBuilder, @Nonnull Store<EntityStore> store) {
+    public void build(@Nonnull Ref<EntityStore> ref, @Nonnull UICommandBuilder uiCommandBuilder,
+            @Nonnull UIEventBuilder uiEventBuilder, @Nonnull Store<EntityStore> store) {
         uiCommandBuilder.append("MyUI.ui");
         uiCommandBuilder.set("#MyLabel.TextSpans", Message.raw("NewText"));
 
-        uiEventBuilder.addEventBinding(CustomUIEventBindingType.ValueChanged, "#MyInput", EventData.of("@MyInput", "#MyInput.Value"), false);
+        uiEventBuilder.addEventBinding(CustomUIEventBindingType.ValueChanged, "#MyInput",
+                EventData.of("@MyInput", "#MyInput.Value"), false);
     }
 
     @Override
@@ -42,7 +44,9 @@ public class MyUI extends InteractiveCustomUIPage<MyUI.Data> {
 
     public static class Data {
         public static final BuilderCodec<Data> CODEC = BuilderCodec.builder(Data.class, Data::new)
-                .append(new KeyedCodec<>("@MyInput", Codec.STRING), (data, value) -> data.value = value, data -> data.value).add()
+                .append(new KeyedCodec<>("@MyInput", Codec.STRING), (data, value) -> data.value = value,
+                        data -> data.value)
+                .add()
                 .build();
 
         private String value;
