@@ -1,3 +1,6 @@
+/*
+ * Copyright (c) 2026 Nyxis. All rights reserved.
+ */
 package dev.WelcomeMessage.ui;
 
 import com.hypixel.hytale.codec.Codec;

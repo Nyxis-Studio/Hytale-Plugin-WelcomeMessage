@@ -1,3 +1,6 @@
+/*
+ * Copyright (c) 2026 Nyxis. All rights reserved.
+ */
 package dev.WelcomeMessage.listeners;
 
 import com.hypixel.hytale.server.core.Message;
