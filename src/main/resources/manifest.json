@@ -1,13 +1,11 @@
 {
-  "Group": "dev.hytalemodding",
-  "Name": "WelcomeMessage",
-  "Version": "0.0.1",
+  "Group": "Nyxis",
+  "Name": "JoinWelcomeMessage",
+  "Version": "0.1.1",
   "Description": "A plugin to show a welcome message to players",
   "Authors": [
     {
-      "Name": "Nyxis",
-      "Email": "nyxis@example.com",
-      "Url": ""
+      "Name": "Nyxis"
     }
   ],
   "Website": "https://github.com/Nyxis-Studio/Hytale-Plugin-WelcomeMessage",
