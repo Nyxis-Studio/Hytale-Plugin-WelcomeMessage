@@ -1,7 +1,7 @@
 {
   "Group": "Nyxis",
   "Name": "JoinWelcomeMessage",
-  "Version": "0.1.1",
+  "Version": "0.1.2",
   "Description": "A plugin to show a welcome message to players",
   "Authors": [
     {
